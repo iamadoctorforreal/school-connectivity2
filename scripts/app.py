@@ -1,7 +1,7 @@
 import pandas as pd
 import zipfile
 
-zf = zipfile.ZipFile('/workspaces/school-connectivity2/data/school_geolocation_measurements.zip') 
+zf = zipfile.ZipFile('/school-connectivity2/data/school_geolocation_measurements.zip') 
 measurements_data = pd.read_csv(zf.open('measurements.csv'))
 geolocation_data = pd.read_csv(zf.open('school_geolocation.cvs'))
 

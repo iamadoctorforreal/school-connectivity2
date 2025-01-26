@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 merged_data = pd.merge(geolocation_data, measurements_data, on='school_id_giga')
 
 
-low_speed_threshold = 5  # Mbps
+low_speed_threshold = 50  # Mbps
 
 urgent_help = merged_data[(merged_data['download_speed'] < low_speed_threshold) |
                           (merged_data['upload_speed'] < low_speed_threshold) |
@@ -47,7 +47,7 @@ def analyze_connectivity(data):
 def suggest_improvements(school):
 
 
-    return f"{school['school_id_giga']} needs better connectivity. Suggested upgrade: Fiber Optic."
+    return f"{school['school_name']} needs better connectivity. Suggested upgrade: Fiber Optic."
 
 st.title("School Connectivity Analysis")
 

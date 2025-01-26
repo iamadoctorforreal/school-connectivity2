@@ -24,8 +24,6 @@ import matplotlib.pyplot as plt
 
 
 
-# Authenticate ngrok (replace with your authtoken)
-# ngrok authtoken 2s9qSqKoGZiqTdcfQDb6VlLIkSM_4ErRXPfuSp9qEzyNnH2rS
 
 
 # Merge datasets on 'school_id_giga'
@@ -47,7 +45,7 @@ def analyze_connectivity(data):
 def suggest_improvements(school):
 
 
-    return f"{school['school_name']} needs better connectivity. Suggested upgrade: Fiber Optic."
+    return f"{school['school_id_gigs, school_name']} needs better connectivity. Suggested upgrade: Fiber Optic."
 
 st.title("School Connectivity Analysis")
 
@@ -70,12 +68,8 @@ ax.set_ylabel('Latitude')
 st.pyplot(fig)
 
 
-public_url = ngrok.connect(port='8501')
+# public_url = ngrok.connect(port='8501')
 
-print(f"Streamlit app is available at: {public_url}")
-
-
+# print(f"Streamlit app is available at: {public_url}")
 
 
-
-# !ngrok authtoken 2s9qSqKoGZiqTdcfQDb6VlLIkSM_4ErRXPfuSp9qEzyNnH2rS#https://super-duper-space-memory-vqx74p477663p99v.github.dev/?editSessionId=e6b1858b-96a2-4a8d-b286-7ffcc85e7589&continueOn=1

@@ -53,7 +53,7 @@ def analyze_connectivity(data):
 def suggest_improvements(school):
 
 
-    return f"{school['school_id_giga']} {school['school_name_y']} needs better connectivity. Suggested upgrade: Fiber Optic."
+    return f"{school['school_name_y']}  needs better connectivity. Suggested upgrade: Fiber Optic."
 
 st.title("School Connectivity Analysis")
 

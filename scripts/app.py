@@ -3,7 +3,7 @@ import pandas as pd
 
 
 measurements_data = pd.read_csv('data/measurements.zip')
-geolocation_data = pd.read_csv('dats/school_geolocation.cvs')
+geolocation_data = pd.read_csv('data/school_geolocation.cvs')
 
 
 

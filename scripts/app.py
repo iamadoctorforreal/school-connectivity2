@@ -53,7 +53,7 @@ def create_interactive_map(data):
         lat='latitude', 
         lon='longitude', 
         color='download_speed',
-        hover_name='school_name_y',
+        hover_name='education_level',
         zoom=3
     )
     fig.update_layout(mapbox_style="open-street-map")

@@ -45,22 +45,7 @@ def analyze_connectivity(data):
 
 
 
-import plotly.express as px
 
-def create_interactive_map(data):
-    fig = px.scatter_mapbox(
-        data, 
-        lat='latitude', 
-        lon='longitude', 
-        color='download_speed',
-        hover_name='education_level',
-        zoom=3
-    )
-    fig.update_layout(mapbox_style="open-street-map")
-    st.plotly_chart(fig)
-
-# Add to main Streamlit app
-create_interactive_map(merged_data)
 
 
 

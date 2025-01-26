@@ -59,7 +59,7 @@ st.title("School Connectivity Analysis")
 
 st.subheader("Schools Needing Urgent Connectivity Help")
 
-for index, row in urgent_help.iterrows(3):
+for index, row in urgent_help.iterrows():
 
 
     st.write(suggest_improvements(row))

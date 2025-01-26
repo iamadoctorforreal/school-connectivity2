@@ -39,7 +39,7 @@ urgent_help = merged_data[(merged_data['download_speed'] < low_speed_threshold) 
 
 def analyze_connectivity(data):
 
-    return data[['school_id_giga', 'school_name', 'download_speed', 'upload_speed', 'latency']]
+    return data[['school_id_giga', 'school_name_y', 'download_speed', 'upload_speed', 'latency']]
 
 
 
@@ -53,13 +53,13 @@ def analyze_connectivity(data):
 def suggest_improvements(school):
 
 
-    return f"{school['school_id_giga']} needs better connectivity. Suggested upgrade: Fiber Optic."
+    return f"{school['school_id_giga']} {school['school_name_y']} needs better connectivity. Suggested upgrade: Fiber Optic."
 
 st.title("School Connectivity Analysis")
 
 st.subheader("Schools Needing Urgent Connectivity Help")
 
-for index, row in urgent_help.iterrows():
+for index, row in urgent_help.iterrows(3):
 
 
     st.write(suggest_improvements(row))

@@ -42,6 +42,29 @@ def analyze_connectivity(data):
     return data[['school_id_giga', 'school_name', 'download_speed', 'upload_speed', 'latency']]
 
 
+
+
+
+import plotly.express as px
+
+def create_interactive_map(data):
+    fig = px.scatter_mapbox(
+        data, 
+        lat='latitude', 
+        lon='longitude', 
+        color='download_speed',
+        hover_name='school_name',
+        zoom=3
+    )
+    fig.update_layout(mapbox_style="open-street-map")
+    st.plotly_chart(fig)
+
+# Add to main Streamlit app
+create_interactive_map(merged_data)
+
+
+
+
 def suggest_improvements(school):
 
 

@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 
 
-pip install streamlit pandas scikit-learn matplotlib pyngrok
+
 
 # Install necessary libraries (if not already installed)
 # pip install streamlit pandas scikit-learn matplotlib pyngrok
